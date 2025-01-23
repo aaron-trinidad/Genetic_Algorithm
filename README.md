@@ -73,7 +73,7 @@ Genetic_Algorithm/
 1. Clone the repository:  
 
    ```bash
-   git clone https://github.com/username/Genetic_Algorithm.git
+   git clone https://github.com/aaron-trinidad/Genetic_Algorithm.git
    cd Genetic_Algorithm
    ```  
 
