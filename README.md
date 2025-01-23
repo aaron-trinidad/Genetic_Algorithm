@@ -2,39 +2,39 @@
 
 ### Overview
 
-The algorithm presented here is a simple implementation of GA in C++. \
-Individuals and populations are represented as classes, and constructors are \
+The algorithm presented here is a simple implementation of GA in C++.
+Individuals and populations are represented as classes, and constructors are
 employed to generate new populations.
 
-Each individual's genes represent the values of parameters in a function. \
-Initially, these genes are assigned random values within a specified \
+Each individual's genes represent the values of parameters in a function.
+Initially, these genes are assigned random values within a specified
 range (0.0 to 1.0 in this case).
 
-The goal is to maximize the result of a simple function: the sum of the squares \
-of each variable. \
-To achieve this, individuals are evaluated and ranked based on their \
-function results.\
-Individuals with the highest ranks are selected as parents for the next \
-generation, creating a new population.\
-To introduce diversity, the genes of the offspring can undergo mutation.\
+The goal is to maximize the result of a simple function: the sum of the squares
+of each variable.
+To achieve this, individuals are evaluated and ranked based on their
+function results.
+Individuals with the highest ranks are selected as parents for the next
+generation, creating a new population.
+To introduce diversity, the genes of the offspring can undergo mutation.
 
 Executing the main program yields an optimal solution to the given problem.
 
 CMake was used to manage the compilation process for all files.
 
-**Important: The function used to evaluate individual ranks/fits can be adapted \
-to suit various problem domains. With slight modifications to the evaluate \
-function, this code was used to control the parameters (voltages) of an \
-adaptive optics instrument, which was used to compress the pulses of a \
+**Important: The function used to evaluate individual ranks/fits can be adapted
+to suit various problem domains. With slight modifications to the evaluate
+function, this code was used to control the parameters (voltages) of an
+adaptive optics instrument, which was used to compress the pulses of a
 femtosecond laser.**
 
 ---
 
 ### Features
 
-- **Population Initialization:** Random generation of individuals with \
+- **Population Initialization:** Random generation of individuals with
 customizable properties.
-- **Selection:** Fitness-based selection to choose the best individuals for \
+- **Selection:** Fitness-based selection to choose the best individuals for
 crossover.
 - **Crossover:** Generation of new individuals through recombination of parents.
 - **Mutation:** Random alterations to maintain diversity and avoid local optima.
@@ -98,7 +98,7 @@ Genetic_Algorithm/
 5. Run the program:  
 
    ```bash
-   ./Genetic_Algorithm
+   ./gen_alg
    ```  
 
 ---
@@ -115,8 +115,8 @@ Modify the parameters in the `main.cpp` file to customize:
 
 ### Future Improvements
 
-- Changing the mutation value range. When a gene mutates it does so within the \
-full range of allowed values. Changing this so that it only mutates within a \
+- Changing the mutation value range. When a gene mutates it does so within the
+full range of allowed values. Changing this so that it only mutates within a
 given small percentage could bring about convergence improvements.  
 - Implement additional selection strategies (e.g., tournament selection).  
 - Extend the algorithm to support multi-objective optimization.  
@@ -126,7 +126,7 @@ given small percentage could bring about convergence improvements.
 
 ### Author  
 
-Developed by Aaron Trinidad, a physicist and C++ enthusiast exploring \
+Developed by Aaron Trinidad, a physicist and C++ enthusiast exploring
 optimization algorithms for his work in an NonLinear Optics Lab.  
 
 ---
